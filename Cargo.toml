@@ -1,0 +1,12 @@
+[package]
+name = "libharu"
+version = "0.1.0"
+authors = ["Skyler Lipthay <skyler.lipthay@gmail.com>"]
+description = "Safe libharu bindings for Rust"
+readme = "README.md"
+keywords = ["libharu", "pdf"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/SkylerLipthay/libharu-rs"
+
+[dependencies]
+libharu-sys = { git = "https://github.com/SkylerLipthay/libharu-sys-rs" }
