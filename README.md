@@ -11,6 +11,5 @@ Features are implemented as they are needed. Currently this crate is capable of:
 
 ## To-do
 
-* Fonts/text
 * Images
 * Compression
