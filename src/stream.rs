@@ -10,7 +10,7 @@ use std::os::raw::c_void;
 /// # Safety
 ///
 /// The returned `haru::HPDF_Stream` **must** have its ownership consumed to avoid memory leaks.
-/// Consumtion is either done by passing the stream to a libharu function that frees it, or by
+/// Consumption is either done by passing the stream to a libharu function that frees it, or by
 /// manually using `haru::HPDF_Stream_Free`.
 pub unsafe fn convert_read_stream<R: Read + Seek>(handle: &DocumentHandle,
                                                   r: R) -> haru::HPDF_Stream {
@@ -33,7 +33,7 @@ pub unsafe fn convert_read_stream<R: Read + Seek>(handle: &DocumentHandle,
 /// # Safety
 ///
 /// The returned `haru::HPDF_Stream` **must** have its ownership consumed to avoid memory leaks.
-/// Consumtion is either done by passing the stream to a libharu function that frees it, or by
+/// Consumption is either done by passing the stream to a libharu function that frees it, or by
 /// manually using `haru::HPDF_Stream_Free`.
 pub unsafe fn convert_write_stream<W: Write>(handle: &DocumentHandle,
                                              w: &mut W) -> haru::HPDF_Stream {
